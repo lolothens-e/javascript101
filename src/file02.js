@@ -17,8 +17,8 @@ const frameworks = [
 ];
 
 for (let cadena of frameworks){
-  lista=cadena.split("|");
-    var frameworkObj ={
+  let lista=cadena.split("|");
+    let frameworkObj ={
     frameworkName: lista[0].trim(),
     releaseDate: lista[1].trim(),
     usersName: lista[2].trim(),
