@@ -25,7 +25,7 @@ for (let cadena of frameworks){
     popularityPercentage: lista[3].trim()
   };
 
-  addRow(frameworkObj,data-frameworks);
+  addRow(frameworkObj,"data-frameworks");
 }
 
 /**
