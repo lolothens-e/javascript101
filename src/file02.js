@@ -16,6 +16,18 @@ const frameworks = [
   "Solid|5 de julio de 2021|250,000|80%"
 ];
 
+for (let cadena of frameworks){
+  lista=cadena.split("|");
+    var frameworkObj ={
+    frameworkName: lista[0].trim(),
+    releaseDate: lista[1].trim(),
+    usersName: lista[2].trim(),
+    popularityPercentage: lista[3].trim()
+  };
+
+  addRow(frameworkObj,data-frameworks);
+}
+
 /**
  * 1. Itere el arreglo frameworks.
  * Referencia: https://javascript.info/array#loops
